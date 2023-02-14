@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
 
     <title>HL Lactalis Rewards Email Brown Cow</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+      /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap'); */
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/Microbrew-Soft-One.otf');
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/NeutraText%20BookAlt.otf');
 
       *{
         margin:0;
@@ -21,7 +23,7 @@
 
       body{
         font-size:16px;
-        font-family: "Poppins", Helvetica, Arial, sans-serif;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
       }
 
       .wrapper{
@@ -54,24 +56,31 @@
       #hl-logo{
         max-width:200px;
         float:left;
+        margin:12px 24px;
       }
 
       #social-logo-container{
+        width:300px;
+        max-width:300px;
+      }
+
+      #social-logo-list{
+        margin:24px;
         float:right;
         list-style-type:none;
       }
 
-      #social-logo-container > li{
+      #social-logo-list > li{
         display:inline;
       }
 
-      #social-logo-container > li > a > img{
-        max-width:40px;
+      #social-logo-list > li > a > img{
+        max-width:36px;
+        margin-right:4px;
       }      
 
       .container{
         background-color: #FFFEFA;
-
       }
 
       .color-box{
@@ -80,22 +89,19 @@
         padding:24px 48px;
       }
 
-      #header{
-        padding: 16px 12px;
-        width:100%;
-      }
-
-      #header > td{
-        width:50%;
-      }
-      
-
       #hero-image{
         background-color: #FFFEFA;
       }
 
       #discount-container{
         background-color: #235546;
+      }
+
+      h1{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:48px;
+        letter-spacing: -2px;
+        line-height: 48px;
       }
 
       #discount-container > td > h1, #discount-container > td > h2{
@@ -181,7 +187,8 @@
       }
 
       .column-text{
-        font-size:16px;
+        font-size:18px;
+        line-height:24px;
         text-align: left;
         padding:24px;
       }
@@ -192,6 +199,11 @@
           font-size:18px;
         }
 
+        #social-logo-list{
+        width:100%;
+        margin: 0 auto;
+      }
+
       }
 
     </style>
@@ -200,39 +212,65 @@
     <center class="wrapper">
       <table class="main">
         <tbody>
-        <tr>
-          <td>
-            <table id="header" class="container">
-              <tr>
-                <td>
-                  <img id="hl-logo" href="#" src="img/hl-logo-horizontal-2.png" alt="hl logo">
-                </td>
-                <td>
-                <ul id="social-logo-container">
-                  <li>
-                    <a href="https://www.facebook.com/HealthyLivingMarket"><img src="img/fb-logo.png" alt="fb logo"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/healthy.living.market"><img src="img/ig-logo.png" alt="ig logo"></a>
-                  </li>
-                  <li>
-                    <a href=""><img  src="img/tt-logo.png" alt="tt logo"></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/HealthyLivingVT"><img src="img/tw-logo.png" alt="tw logo"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com/healthylivingmarketandcafe/"><img src="img/pt-logo.png" alt="pt logo"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/user/HealthyLivingMovies"><img src="img/yt-logo.png" alt="yt logo"></a>
-                  </li>
-                </ul>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+
+<!-- Header -->
+    <tr>
+      <td>
+        <table width="100%">
+          <tr>
+            <td class="two-columns">
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td>
+                          <a href="https://healthylivingmarket.com/" ><img id="hl-logo" src="img/hl-logo-horizontal-2.png" alt="hl logo"></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td id="social-logo-container">
+                          <ul id="social-logo-list">
+                            <li>
+                              <a href="https://www.facebook.com/HealthyLivingMarket"><img src="img/fb-logo.png" alt="fb logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/healthy.living.market"><img src="img/ig-logo.png" alt="ig logo"></a>
+                            </li>
+                            <li>
+                              <a href=""><img  src="img/tt-logo.png" alt="tt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com/HealthyLivingVT"><img src="img/tw-logo.png" alt="tw logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.pinterest.com/healthylivingmarketandcafe/"><img src="img/pt-logo.png" alt="pt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.youtube.com/user/HealthyLivingMovies"><img src="img/yt-logo.png" alt="yt logo"></a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Hero -->
     <tr>
       <td>
         <table id="hero" class="container">
@@ -255,7 +293,7 @@
     </tr>
 
 
-    <!--Two Column Component -->
+    <!--First Two Column Component -->
     <tr>
       <td>
         <table width="100%">
@@ -293,7 +331,7 @@
       </td>
     </tr>
 
-        <!--Two Column Component -->
+        <!-- Second Two Column Component -->
         <tr>
           <td>
             <table width="100%">
@@ -333,7 +371,7 @@
           </td>
         </tr>
     
-      
+      <!-- Quote Component -->
     <tr>
       <td>
         <table id="quote" class="container color-box">
@@ -361,6 +399,7 @@
       </td>
     </tr>
       
+    <!-- Disclaimer -->
     <tr>
       <td>
         <table id="disclaimer" class="container">
@@ -380,7 +419,8 @@
         </table>
       </td>
     </tr>
-      
+
+      <!-- Footer -->
     <tr>
       <td>
         <table id="footer" class="container">
