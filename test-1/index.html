@@ -21,6 +21,7 @@
 
       body{
         font-size:16px;
+        font-family: "Poppins", Helvetica, Arial, sans-serif;
       }
 
       .wrapper{
@@ -36,7 +37,6 @@
         margin: 0 auto;
         background-color:#FFFEFA;
         border-spacing:0;
-        font-family: "Poppins", Helvetica, Arial, sans-serif;
       }
 
       table{
@@ -65,7 +65,7 @@
         display:inline;
       }
 
-      #social-logo-container > li > img{
+      #social-logo-container > li > a > img{
         max-width:40px;
       }      
 
@@ -111,18 +111,6 @@
         margin-top:24px;
         font-weight:300;
         font-size: 24px;
-      }
-
-      #email-content > tbody > tr > td{
-        width:50%;
-      }
-
-      #email-content > tbody > tr > td > p{
-        padding:24px;
-      }
-
-      #email-content > tbody > tr > td > p{
-        line-height: 24px;
       }
 
       #quote{
@@ -175,14 +163,14 @@
       }
 
       .column-image{
-        width:260px;
-        max-width:260px;
+        width:100%;
+        max-width:300px;
       }
 
       .two-columns{
         font-size:0;
         text-align:center;
-        padding:35px 0px 40px;
+        padding:12px 0px;
       }
 
       .two-columns .column{
@@ -190,6 +178,12 @@
         max-width:300px;
         display:inline-block;
         vertical-align:top;
+      }
+
+      .column-text{
+        font-size:16px;
+        text-align: left;
+        padding:24px;
       }
 
       @media screen and (max-width: 480px){
@@ -259,34 +253,9 @@
         </table>
       </td>
     </tr>
-      
-    <tr>
-      <td>
-        <table id="email-content" class="container">
-          <tr>
-            <td>
-              <p>Throughout 2023, every time you buy a Brown Cow 32 oz. Yogurt your purchase counts toward a free 32 oz. one! Your cashier will tell you when your next yogurt is free, so all you have to do is save! Here's to a healthy year enjoying the highest ingredient standards from our family to yours.</p>
-            </td>
-            <td>
-              <img id="image-1" href="#" src="img/23-HL-LactalisRewards-01-2.png" alt="photograph of a yogurt in a bowl with berries around and a spoon">
-            </td>
-          </tr>
-      
-          <tr>
-            <td>
-              <img id="image-2" href="#" src="img/23-HL-LactalisRewards-01-3.png" alt="photograph of a yogurt in a bowl with berries around and a spoon">
-            </td>
-            <td>
-              <p>This offer applies to Brown Cow 32 oz. Whole Milk Yogurt Maple, Plain, and Vanilla varieties. No coupon or punchcard required. Just buy, enjoy, and save.
-                <br>
-                New to Brown Cow's cream top yogurt goodness? Learn more about this <a href="https://www.browncowfarm.com/our-story/">local gem.</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
 
-    
+
+    <!--Two Column Component -->
     <tr>
       <td>
         <table width="100%">
@@ -298,12 +267,7 @@
                     <table class="column-content">
                       <tr>
                         <td>
-                          <a href="#"><img class="column-image" src="img/23-HL-LactalisRewards-01-2.png" alt="photograph of a yogurt in a bowl with berries around and a spoon"></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="column-text">Throughout 2023, every time you buy a Brown Cow 32 oz. Yogurt your purchase counts toward a free 32 oz. one! Your cashier will tell you when your next yogurt is free, so all you have to do is save! Here's to a healthy year enjoying the highest ingredient standards from our family to yours.</p>
+                          <p class="column-text">Throughout 2023, every time you buy a Brown Cow 32 oz. Yogurt your purchase counts toward a free 32 oz. one! Your cashier will tell you when your next yogurt is free, so all you have to do is save! Here's to a healthy year enjoying the highest ingredient standards from our family to yours.</p>
                       </td>
                     </tr>
                     </table>
@@ -317,13 +281,8 @@
                       <tr>
                         <td>
                           <a href="#"><img class="column-image" src="img/23-HL-LactalisRewards-01-2.png" alt="photograph of a yogurt in a bowl with berries around and a spoon"></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p class="column-text">Throughout 2023, every time you buy a Brown Cow 32 oz. Yogurt your purchase counts toward a free 32 oz. one! Your cashier will tell you when your next yogurt is free, so all you have to do is save! Here's to a healthy year enjoying the highest ingredient standards from our family to yours.</p>
-                      </td>
-                    </tr>
+                        </td>
+                      </tr>
                     </table>
                   </td>
                 </tr>
@@ -333,6 +292,46 @@
         </table>
       </td>
     </tr>
+
+        <!--Two Column Component -->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-columns">
+                  <table class="column">
+                    <tr>
+                      <td class="column-padding">
+                        <table class="column-content">
+                          <tr>
+                            <td>
+                              <img id="image-2" href="#" src="img/23-HL-LactalisRewards-01-3.png" alt="photograph of a yogurt in a bowl with berries around and a spoon">
+                          </td>
+                        </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="column">
+                    <tr>
+                      <td class="column-padding">
+                        <table class="column-content">
+                          <tr>
+                            <td>
+                              <p class="column-text">This offer applies to Brown Cow 32 oz. Whole Milk Yogurt Maple, Plain, and Vanilla varieties. No coupon or punchcard required. Just buy, enjoy, and save.
+                                <br>
+                                New to Brown Cow's cream top yogurt goodness? Learn more about this <a href="https://www.browncowfarm.com/our-story/">local gem.</a></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
     
       
     <tr>
