@@ -87,6 +87,7 @@
         background-color: #235546;
         color: #ffffff;
         padding:24px 48px;
+        text-align:center;
       }
 
       #hero-image{
@@ -99,24 +100,15 @@
 
       h1{
         font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
-        font-size:48px;
+        font-size:40px;
         letter-spacing: -2px;
         line-height: 48px;
-      }
-
-      #discount-container > td > h1, #discount-container > td > h2{
-        color:#ffffff;
-        text-align: center;
-      }
-
-      #discount-container > td{
-        padding:24px 32px;
-      }
-
-      #discount-container > td > h2{
-        margin-top:24px;
         font-weight:300;
-        font-size: 24px;
+      }
+
+      #discount > tbody > tr > td > h2{
+        margin-top:24px;
+        font-weight:500;
       }
 
       #quote{
@@ -129,7 +121,8 @@
 
       #quote > tbody > tr > td > h3{
         margin-top:12px;
-        font-size: 16px;
+        font-size: 20px;
+        line-height:32px;
         font-weight:300;
       }
 
@@ -139,33 +132,10 @@
       }
 
       #disclaimer > tbody > tr > td > p{
-        color:#888888;
+        color:#444444;
         font-size: 12px;
         padding:24px 56px;
         line-height: 18px;
-      }
-
-      #footer > tbody > tr > td{
-        width:50%;
-        padding:24px 24px;
-      }
-
-      #footer > tbody > tr > td > p{
-        color:#888888;
-        font-size: 12px;
-        line-height: 18px;
-        margin-top:16px;
-      }
-
-      #footer > tbody > tr > td > h4{
-        color:#888888;
-        font-size: 24px;
-        line-height: 18px;
-      }
-      
-      #footer > tbody > tr > td > img{
-        width: 200px;
-        float:right;
       }
 
       .column-image{
@@ -193,7 +163,32 @@
         padding:24px;
       }
 
-      @media screen and (max-width: 480px){
+      .footer > tbody > tr > td{
+        width:50%;
+        padding:24px 24px;
+      }
+
+      .footer > tbody > tr > td > p{
+        color:#000000;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top:16px;
+        text-align: left;
+      }
+
+      .footer > tbody > tr > td > h4{
+        color:#000000;
+        font-size: 24px;
+        line-height: 18px;
+        text-align: left;
+      }
+      
+      .footer > tbody > tr > td > a > img{
+        width: 200px;
+        float:right;
+      }
+
+      @media screen and (max-width: 600px){
 
           body{
           font-size:18px;
@@ -202,6 +197,11 @@
         #social-logo-list{
         width:100%;
         margin: 0 auto;
+      }
+
+      .column-text{
+        font-size: 24px;
+        line-height: 28px;
       }
 
       }
@@ -246,7 +246,7 @@
                               <a href="https://www.instagram.com/healthy.living.market"><img src="img/ig-logo.png" alt="ig logo"></a>
                             </li>
                             <li>
-                              <a href=""><img  src="img/tt-logo.png" alt="tt logo"></a>
+                              <a href="https://www.tiktok.com/@healthy.living.grocery"><img  src="img/tt-logo.png" alt="tt logo"></a>
                             </li>
                             <li>
                               <a href="https://twitter.com/HealthyLivingVT"><img src="img/tw-logo.png" alt="tw logo"></a>
@@ -279,12 +279,17 @@
               <img id="hero-image" href="#" src="img/23-HL-LactalisRewards-01-1.png" alt="hero image of brown cow products stacked">
             </td>
           </tr>
-          <tr id="discount-container">
+        </table>
+      </td>
+    </tr>
+
+    <!-- Discount Component -->
+    <tr>
+      <td>
+        <table id="discount" class="container color-box">
+          <tr>
             <td>
-              <h1>ALL YEAR LONG!
-              Buy 10 Get 1 FREE on
-              your next in-store visit.
-              </h1>
+              <h1>ALL YEAR LONG! Buy 10 Get 1 FREE on your next in-store visit!</h1>
               <h2>THIS BROWN COW DEAL WILL WOW!</h2>
             </td>
           </tr>
@@ -377,8 +382,8 @@
         <table id="quote" class="container color-box">
           <tr>
             <td>
-              <h2>“How much do I appreciate your loyalty? TONS!</h1>
-              <h3>For almost 40 years, I've felt grateful every time someone enters our stores. Here's one way I'd like to say thanks!”</h2>
+              <h2>“How much do I appreciate your loyalty? TONS!</h2>
+              <h3>For almost 40 years, I've felt grateful every time someone enters our stores. Here's one way I'd like to say thanks!”</h3>
               <p>-Katy Lesser, Founder</p>
             </td>
           </tr>
@@ -421,24 +426,47 @@
     </tr>
 
       <!-- Footer -->
+
     <tr>
       <td>
-        <table id="footer" class="container">
+        <table width="100%">
           <tr>
-            <td>
-              <h4>Healthy Living</h4>
-              <p>
-                222 Dorset St, South Burlington, VT 05403
-                <br>Hours: 7am-9pm every day
-                <br>Contact Us: 802.863.2569 or visit our website
-                <br><br>129 Market Street, Williston, VT 05495
-                <br>Hours: 8am-9pm every day
-                <br>Contact Us: 802-879-2020 or visit our website
-                <br><br>© 2020 Healthy Living
-                <br><br><a href="#">unsubscribe from this list</a>  |  <a href="#">update profile</a></p>
-            </td>
-            <td>
-              <img href="#" src="img/map2-01.png" alt="a top down road map of the vermont store">
+            <td class="two-columns">
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tr>
+                        <td>
+                          <h4>Healthy Living</h4>
+                          <p>
+                            222 Dorset St, South Burlington, VT 05403
+                            <br>Hours: 7am-9pm every day
+                            <br>Contact Us: 802.863.2569 or visit our website
+                            <br><br>129 Market Street, Williston, VT 05495
+                            <br>Hours: 8am-9pm every day
+                            <br>Contact Us: 802-879-2020 or visit our website
+                            <br><br>© 2020 Healthy Living
+                            <br><br><a href="#">unsubscribe from this list</a>  |  <a href="#">update profile</a></p>  
+                        </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tr>
+                        <td>
+                          <a href="https://goo.gl/maps/emyzJbuj1yLzwGb97"><img  src="img/map2-01.png" alt="a top down road map of the vermont store">  </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
+
+    <title>Best Deals Email Template</title>
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap'); */
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/Microbrew-Soft-One.otf');
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/NeutraText%20BookAlt.otf');
+
+      *{
+        margin:0;
+        padding:0;
+        border:0;
+      }
+
+      body{
+        font-size:16px;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+      }
+
+      .wrapper{
+        width:100%;
+        table-layout: fixed;
+        background-color:#FDF4DB;
+        border-spacing:0px;
+      }
+
+      .main{
+        width:100%;
+        max-width:600px;
+        margin: 0 auto;
+        background-color:#FFFEFA;
+        border-spacing:0;
+      }
+
+      table{
+        border-spacing:0;
+      }
+
+      tbody{
+        width:100%;
+      }
+
+      img{
+        width:100%;
+      }
+
+      a{
+        color:#205583;
+      }
+
+      #hl-logo{
+        max-width:200px;
+        float:left;
+        margin:12px 24px;
+      }
+
+      #social-logo-container{
+        width:300px;
+        max-width:300px;
+      }
+
+      #social-logo-list{
+        margin:24px;
+        float:right;
+        list-style-type:none;
+      }
+
+      #social-logo-list > li{
+        display:inline;
+      }
+
+      #social-logo-list > li > a > img{
+        max-width:36px;
+        margin-right:4px;
+      }      
+
+      .one-column{
+        background-color: #FFFEFA;
+        width:100%;
+      }
+
+      .color-box{
+        background-color: #235546;
+        color: #ffffff;
+        padding:24px 48px;
+        text-align:center;
+      }
+
+      #hero-image{
+        background-color: #FFFEFA;
+      }
+
+      #discount-container{
+        background-color: #235546;
+      }
+
+      .bg-image-box{
+        width:100%;
+        height:440px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:40px;
+        letter-spacing: -2px;
+        line-height: 48px;
+        font-weight:300;
+      }
+
+      #discount > tbody > tr > td > h2{
+        margin-top:24px;
+        font-weight:500;
+      }
+
+      #quote{
+        text-align:center;
+      }
+
+      #quote > tbody > tr > td > h2{
+        font-size:24px;
+      }
+
+      #quote > tbody > tr > td > h3{
+        margin-top:12px;
+        font-size: 20px;
+        line-height:32px;
+        font-weight:300;
+      }
+
+      #quote > tbody > tr > td > p{
+        margin-top:24px;
+        font-weight:600;
+      }
+
+      #disclaimer > tbody > tr > td > p{
+        color:#444444;
+        font-size: 12px;
+        padding:24px 56px;
+        line-height: 18px;
+      }
+
+      .column-image{
+        width:100%;
+        max-width:300px;
+      }
+
+      .two-columns{
+        font-size:0;
+        text-align:center;
+        padding:12px 0px;
+      }
+
+      .two-columns .column{
+        width:100%;
+        max-width:300px;
+        display:inline-block;
+        vertical-align:top;
+      }
+
+      .column-padding{
+        width:100%;
+      }
+
+      .column-text{
+        font-size:18px;
+        line-height:24px;
+        text-align: left;
+        padding:24px;
+      }
+
+      .footer > tbody > tr > td{
+        width:50%;
+        padding:24px 24px;
+      }
+
+      .footer > tbody > tr > td > p{
+        color:#000000;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top:16px;
+        text-align: left;
+      }
+
+      .footer > tbody > tr > td > h4{
+        color:#000000;
+        font-size: 24px;
+        line-height: 18px;
+        text-align: left;
+      }
+      
+      .footer > tbody > tr > td > a > img{
+        width: 200px;
+        float:right;
+      }
+
+      .bd-date{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:48px;
+        letter-spacing: -3px;
+        line-height: 48px;
+        font-weight:300;
+        text-align: center;
+      }
+
+      .blue{
+        color:#005580;
+      }
+
+      .green{
+        color: #005745;
+      }
+
+      .red{
+        color: #CF2C31;
+      }
+
+      .bd-container{
+        padding: 0px 32px 32px 32px;
+      }
+
+      .bd-text{
+        text-align: left;
+        font-size:24px;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+      }
+      
+      .bd-image{
+        max-width: 300px;
+        width:100%;
+      }
+
+      .bd-discount{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:56px;
+        letter-spacing: -3px;
+        line-height: 48px;
+        font-weight:300;
+        margin-bottom:12px;
+        display:inline;
+        float:left;
+        margin-right:4px;
+      }
+
+      .bd-discount-cents{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:32px;
+        letter-spacing: -2px;
+        padding-top:2px;
+        vertical-align: top;
+        float:left;
+      }
+
+      .bd-discount-upto{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:24px;
+        letter-spacing: -2px;
+        padding-top:2px;
+        padding-left:4px;
+        vertical-align: top;
+        width:20px;
+        float:left;
+      }
+
+      .bd-discount-size{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:32px;
+        padding-top:16px;
+        letter-spacing: -2px;
+        vertical-align: bottom;
+        float:left;
+      }
+
+      .bd-brand{
+        clear: left;
+        margin-bottom: 4px;
+      }
+
+      .bd-product{
+        font-weight:600;
+        margin-bottom:24px;
+      }
+
+      .bd-size-price{
+        font-size:12px;
+        margin-bottom: 12px;
+      }
+
+      .bd-button{
+        padding:10px 12px 8px 12px;
+        border-radius: 4px;
+        background-color: #40927A;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight:600;
+        font-size:12px;
+        float:left;
+      }
+
+      .bd-green-bar{
+        background-color: #CDDC29;
+        width:100%;
+        height:20px;
+      }
+
+      .bd-header{
+        padding:24px 72px;
+      }
+
+      .bd-header-logo{
+        display:inline;
+        max-width:140px;
+        width:100%;
+        float:left;
+        margin-right:24px;
+      }
+
+      .bd-header-text{
+        font-size:18px;
+        line-height:24px;
+        text-align: left;
+      }
+      
+
+      @media screen and (max-width: 600px){
+
+          body{
+          font-size:18px;
+        }
+
+        #social-logo-list{
+        width:100%;
+        margin: 0 auto;
+      }
+
+      .column-text{
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      .bd-header-logo{
+        margin-bottom: 24px;
+      }
+
+      .bd-header-text{
+        clear:left;
+      }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main">
+        <tbody>
+
+<!-- Header -->
+    <tr>
+      <td>
+        <table width="100%">
+        <tbody>
+          <tr>
+            <td class="two-columns">
+              <table class="column">
+                <tbody>
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td>
+                          <a href="https://healthylivingmarket.com/" target="_blank"><img id="hl-logo" src="img/hl-logo-horizontal-2.png" alt="hl logo"></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tbody>
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td id="social-logo-container">
+                          <ul id="social-logo-list">
+                            <li>
+                              <a href="https://www.facebook.com/HealthyLivingMarket" target="_blank"><img src="img/fb-logo.png" alt="fb logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/healthy.living.market" target="_blank"><img src="img/ig-logo.png" alt="ig logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.tiktok.com/@healthy.living.grocery" target="_blank"><img  src="img/tt-logo.png" alt="tt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com/HealthyLivingVT" target="_blank"><img src="img/tw-logo.png" alt="tw logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.pinterest.com/healthylivingmarketandcafe/" target="_blank"><img src="img/pt-logo.png" alt="pt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.youtube.com/user/HealthyLivingMovies" target="_blank"><img src="img/yt-logo.png" alt="yt logo"></a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>  
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Hero -->
+    <tr>
+      <td>
+        <table id="hero" class="container" style="width:100%">
+        <tbody style="width:100%">
+          <tr style="width:100%">
+            <td> 
+                <!-- style="background-image: url('img/23-HL-BestDeals-Banner.png');" class="bg-image-box" -->
+              <a href="https://healthylivingtogo.com/" target="_blank"><img id="hero-image" src="img/23-HL-BestDeals-Banner.png" alt="Vector fruits pattern around the words Best Deals"></a>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+        <td>
+          <table class="one-column">
+            <tbody>
+            <tr style="width:100%">
+              <td style="width:100%">
+                <p class="bd-date blue">Feb 15 - Feb 28</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+    <!-- <tr>
+        <td>
+            <table width="100%">
+                <tbody>
+                <tr>
+                <td class="two-columns">
+                    <table class="column">
+                    <tbody style="float:right;">
+                    <tr style="float:right;">
+                        <td class="column-padding">
+                        <table class="column-content">
+                            <tr>
+                            <td>
+                                <a href="https://healthylivingtogo.com/" target="_blank"><img class="column-image" style="max-width: 140px;" src="img/HLToGo-logo.png" alt="HL To Go logo"></a>
+                            </td>
+                        </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <table class="column">
+                    <tr>
+                        <td class="column-padding">
+                        <table class="column-content">
+                            <tr>
+                            <td>
+                                <p class="column-text" style="padding-right:56px">Click a product below and add it right to your HL2GO cart! Get your order curbside or delivered!</p>
+                            </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+                </tbody>  
+            </table>
+        </td>
+    </tr> -->
+
+    <tr>
+        <td>
+          <table class="one-column">
+            <tbody>
+            <tr style="width:100%">
+              <td style="width:100%" class="bd-header">
+                <a href="https://healthylivingtogo.com/" target="_blank"><img class="column-image bd-header-logo" src="img/HLToGo-logo.png" alt="HL To Go logo"></a>
+                <p class="bd-header-text">Click a product below and add it right to your HL2GO cart! Get your order curbside or delivered!</p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+
+
+    <!--1st Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-1.png" alt="mushrooms in packaging"></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="blue bd-container">
+                                    <h3 class="bd-discount bd-text">Save $1</h3> <h3 class="bd-discount-cents bd-text ">00</h3>
+                                    <p class="bd-brand bd-text">Organic</p>
+                                    <p class="bd-product bd-text">Portabella Caps</p>
+                                    <p class="bd-size-price bd-text">SALE price $3.99 / 6 oz.</p>
+                                    <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-2.png" alt="bag of clementines"></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="blue bd-container">
+                                    <h3 class="bd-discount bd-text">Save</h3><h3 class="bd-discount-upto bd-text ">up to</h3><h3 class="bd-discount bd-text">$1</h3><h3 class="bd-discount-cents bd-text ">00</h3>
+                                    <p class="bd-brand bd-text">Halos</p>
+                                    <p class="bd-product bd-text">Conventional Clementine Bag</p>
+                                    <p class="bd-size-price bd-text">SALE price $4.99 / 2 lbs.</p>
+                                    <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+        <!--2nd Two Column Component -->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="two-columns">
+                            <table class="column">
+                                <tr>
+                                <td class="column-padding">
+                                    <table class="column-content">
+                                        <tr>
+                                            <td>
+                                                <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-3.png" alt="mushrooms in packaging"></a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <td class="blue bd-container">
+                                            <h3 class="bd-discount bd-text">Save</h3><h3 class="bd-discount-upto bd-text ">up to</h3><h3 class="bd-discount bd-text">$1</h3><h3 class="bd-discount-cents bd-text ">50</h3>
+                                            <p class="bd-brand bd-text">Earth Balance</p>
+                                            <p class="bd-product bd-text">Plant Based Spreads</p>
+                                            <p class="bd-size-price bd-text">sizes vary / retails vary</p>
+                                            <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                </tr>
+                            </table>
+                            <table class="column">
+                                <tr>
+                                <td class="column-padding">
+                                    <table class="column-content">
+                                        <tr>
+                                            <td>
+                                                <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-4.png" alt="bag of clementines"></a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <td class="blue bd-container">
+                                            <h3 class="bd-discount bd-text">Save</h3><h3 class="bd-discount bd-text">$1</h3><h3 class="bd-discount-cents bd-text ">50</h3>
+                                            <p class="bd-brand bd-text">Gardein</p>
+                                            <p class="bd-product bd-text">Plant Based Products</p>
+                                            <p class="bd-size-price bd-text">SALE price $4.49 / sizes vary</p>
+                                            <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                </tr>
+                            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            </tr>
+
+        <!--3rd Two Column Component -->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="two-columns">
+                            <table class="column">
+                                <tr>
+                                <td class="column-padding">
+                                    <table class="column-content">
+                                        <tr>
+                                            <td class="bd-green-bar">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-5.png" alt="mushrooms in packaging"></a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <td class="green bd-container">
+                                            <h3 class="bd-discount bd-text">Save</h3> <h3 class="bd-discount bd-text">$1</h3>  <h3 class="bd-discount-cents bd-text ">00</h3>
+                                            <p class="bd-brand bd-text">Halo Top</p>
+                                            <p class="bd-product bd-text">Ice Cream</p>
+                                            <p class="bd-size-price bd-text">SALE price $2.58 / 1 pt.</p>
+                                            <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                </tr>
+                            </table>
+                            <table class="column">
+                                <tr>
+                                <td class="column-padding">
+                                    <table class="column-content">
+                                        <tr>
+                                            <td class="bd-green-bar">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank"><img class="bd-image" src="img/23-HL-BestDeals-6.png" alt="bag of clementines"></a>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <td class="green bd-container">
+                                            <h3 class="bd-discount bd-text">Save</h3><h3 class="bd-discount bd-text">$3</h3><h3 class="bd-discount-cents bd-text">00</h3><h3 class="bd-discount-size bd-text">/lb</h3>
+                                            <p class="bd-brand bd-text">Point Reye</p>
+                                            <p class="bd-product bd-text">Bay Blue Cheese</p>
+                                            <p class="bd-size-price bd-text">SALE price $18.99 / 1 lbs.</p>
+                                            <a href="https://healthylivingtogo.com/product/hlm-cst-upc-93404?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                </tr>
+                            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            </tr>
+
+      <!-- Footer -->
+
+    <tr>
+      <td>
+        <table width="100%">
+          <tr>
+            <td class="two-columns">
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tr>
+                        <td>
+                          <h4>Healthy Living</h4>
+                          <p>
+                            222 Dorset St, South Burlington, VT 05403
+                            <br>Hours: 7am-9pm every day
+                            <br>Contact Us: 802.863.2569 or visit our website
+                            <br><br>129 Market Street, Williston, VT 05495
+                            <br>Hours: 8am-9pm every day
+                            <br>Contact Us: 802-879-2020 or visit our website
+                            <br><br>© 2020 Healthy Living
+                            <!-- <br><br><a href="#">unsubscribe from this list</a>  |  <a href="#">update profile</a></p>   -->
+                        </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tr>
+                        <td>
+                          <a href="https://goo.gl/maps/emyzJbuj1yLzwGb97" target="_blank"><img  src="img/map2-01.png" alt="a top down road map of the vermont store">  </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    </tbody>
+    </table>
+    </center>
+  </body>
+</html>
