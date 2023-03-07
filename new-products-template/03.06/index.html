@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>New Products 3/6</title>
+    <style>
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/Microbrew-Soft-One.otf');
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/NeutraText%20BookAlt.otf');
+
+      *{
+        margin:0;
+        padding:0;
+        border:0;
+      }
+
+      body{
+        font-size:16px;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+      }
+
+      .wrapper{
+        width:100%;
+        table-layout: fixed;
+        background-color:#FDF4DB;
+        border-spacing:0px;
+      }
+
+      .main{
+        width:100%;
+        max-width:600px;
+        margin: 0 auto;
+        background-color:#FFFEFA;
+        border-spacing:0;
+      }
+
+      table{
+        border-spacing:0;
+      }
+
+      tbody{
+        width:100%;
+      }
+
+      img{
+        width:100%;
+      }
+
+      a{
+        color:#205583;
+      }
+
+      #hl-logo{
+        max-width:200px;
+        float:left;
+        margin:12px 24px;
+      }
+
+      #social-logo-container{
+        width:300px;
+        max-width:300px;
+      }
+
+      #social-logo-list{
+        margin:24px;
+        float:right;
+        list-style-type:none;
+      }
+
+      #social-logo-list > li{
+        display:inline;
+      }
+
+      #social-logo-list > li > a > img{
+        max-width:36px;
+        margin-right:4px;
+      }      
+
+      .one-column{
+        background-color: #FFFEFA;
+        width:100%;
+      }
+
+      .color-box{
+        background-color: #235546;
+        color: #ffffff;
+        padding:24px 48px;
+        text-align:center;
+      }
+
+      #hero-image{
+        background-color: #FFFEFA;
+      }
+
+      #discount-container{
+        background-color: #235546;
+      }
+
+      .bg-image-box{
+        width:100%;
+        height:440px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:40px;
+        letter-spacing: -2px;
+        line-height: 48px;
+        font-weight:300;
+      }
+
+      #discount > tbody > tr > td > h2{
+        margin-top:24px;
+        font-weight:500;
+      }
+
+      #quote{
+        text-align:center;
+      }
+
+      #quote > tbody > tr > td > h2{
+        font-size:24px;
+      }
+
+      #quote > tbody > tr > td > h3{
+        margin-top:12px;
+        font-size: 20px;
+        line-height:32px;
+        font-weight:300;
+      }
+
+      #quote > tbody > tr > td > p{
+        margin-top:24px;
+        font-weight:600;
+      }
+
+      #disclaimer > tbody > tr > td > p{
+        color:#444444;
+        font-size: 12px;
+        padding:24px 56px;
+        line-height: 18px;
+      }
+
+      .column-image{
+        width:100%;
+        max-width:300px;
+      }
+
+      .two-columns{
+        font-size:0;
+        text-align:center;
+        padding:12px 0px;
+      }
+
+      .two-columns .column{
+        width:100%;
+        max-width:300px;
+        display:inline-block;
+        vertical-align:top;
+      }
+
+      .column-padding{
+        width:100%;
+      }
+
+      .column-text{
+        font-size:18px;
+        line-height:24px;
+        text-align: left;
+        padding:24px;
+      }
+
+      .footer > tbody > tr > td{
+        width:50%;
+        padding:24px 24px;
+      }
+
+      .footer > tbody > tr > td > p{
+        color:#000000;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top:16px;
+        text-align: left;
+      }
+
+      .footer > tbody > tr > td > h4{
+        color:#000000;
+        font-size: 24px;
+        line-height: 18px;
+        text-align: left;
+      }
+      
+      .footer > tbody > tr > td > a > img{
+        width: 200px;
+        float:right;
+      }
+
+
+      .bd-date{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:48px;
+        letter-spacing: -3px;
+        line-height: 48px;
+        font-weight:300;
+        text-align: center;
+      }
+
+      .blue{
+        color:#005580;
+      }
+
+      .green{
+        color: #005745;
+      }
+
+      .red{
+        color: #CF2C31;
+      }
+
+      .black{
+        color: #000000;
+      }
+
+      .bd-container, .np-container{
+        padding: 0px 32px 32px 32px;
+      }
+
+      .bd-text, .np-text{
+        text-align: left;
+        font-size:24px;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+      }
+      
+      .bd-image, .np-image{
+        max-width: 300px;
+        width:100%;
+      }
+
+      .bd-discount{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:56px;
+        letter-spacing: -3px;
+        line-height: 48px;
+        font-weight:300;
+        margin-bottom:12px;
+        display:inline;
+        float:left;
+        margin-right:4px;
+      }
+
+      .bd-discount-cents{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:32px;
+        letter-spacing: -2px;
+        padding-top:2px;
+        vertical-align: top;
+        float:left;
+      }
+
+      .bd-discount-upto{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:24px;
+        letter-spacing: -2px;
+        padding-top:2px;
+        padding-left:4px;
+        vertical-align: top;
+        width:20px;
+        float:left;
+      }
+
+      .bd-discount-size{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:32px;
+        padding-top:16px;
+        letter-spacing: -2px;
+        vertical-align: bottom;
+        float:left;
+      }
+
+      .bd-brand, .np-brand{
+        clear: left;
+        margin-bottom: 4px;
+      }
+
+      .np-brand{
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: 300;
+      }
+
+      .bd-product, .np-product{
+        font-weight:600;
+        margin-bottom:24px;
+        padding-top:16px;
+      }
+
+      .np-product{
+        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-size:32px;
+        padding-top: 4px;
+        line-height:32px;
+        font-weight:300;
+        letter-spacing: -1px;
+      }
+
+      .bd-size-price{
+        font-size:12px;
+        margin-bottom: 12px;
+      }
+
+      .bd-button, .np-button{
+        padding:10px 12px 8px 12px;
+        border-radius: 4px;
+        background-color: #40927A;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight:600;
+        font-size:12px;
+        float:left;
+      }
+
+      .bd-green-bar{
+        background-color: #CDDC29;
+        width:100%;
+        height:20px;
+      }
+
+      .bd-header{
+        padding:24px 72px;
+      }
+
+      .bd-header-logo{
+        display:inline;
+        max-width:140px;
+        width:100%;
+        float:left;
+        margin-right:24px;
+      }
+
+      .bd-header-text{
+        font-size:18px;
+        line-height:24px;
+        text-align: left;
+      }
+
+      .np-description{
+        font-size:14px;
+        line-height: 16px;
+        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+        margin-bottom: 12px;
+      }
+
+      
+
+      @media screen and (max-width: 600px){
+
+          body{
+          font-size:18px;
+        }
+
+        #social-logo-list{
+        width:100%;
+        margin: 0 auto;
+      }
+
+      .column-text{
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      .bd-header-logo{
+        margin-bottom: 24px;
+      }
+
+      .bd-header-text{
+        clear:left;
+      }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main">
+        <tbody>
+
+<!-- Header -->
+    <tr>
+      <td>
+        <table width="100%">
+        <tbody>
+          <tr>
+            <td class="two-columns">
+              <table class="column">
+                <tbody>
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td>
+                          <a href="https://healthylivingmarket.com/" target="_blank"><img id="hl-logo" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368358_hl-logo-horizontal-2_01GT03F22NHYGYCQCKN8Z2MVPR.png" alt="hl logo"></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tbody>
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content">
+                      <tr>
+                        <td id="social-logo-container">
+                          <ul id="social-logo-list">
+                            <li>
+                              <a href="https://www.facebook.com/HealthyLivingMarket" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368040_fb-logo_01GT03F1RXM9K7Z3GYYBKSJ6JE.png" alt="fb logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/healthy.living.market" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368857_ig-logo_01GT03F2J977Q4ZB0M4S2KNWQR.png" alt="ig logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.tiktok.com/@healthy.living.grocery" target="_blank"><img  src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369894_tt-logo_01GT03F3JRETZMN5JJKFKWYXDT.png" alt="tt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com/HealthyLivingVT" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370218_tw-logo_01GT03F3WTJ8MPP4EHJ6XDWCNM.png" alt="tw logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.pinterest.com/healthylivingmarketandcafe/" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369563_pt-logo_01GT03F38ESTRHEXPGM53MJQRF.png" alt="pt logo"></a>
+                            </li>
+                            <li>
+                              <a href="https://www.youtube.com/user/HealthyLivingMovies" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370537_yt-logo_01GT03F46R95BFW4QR3KE6N8TF.png" alt="yt logo"></a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>  
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Hero -->
+    <tr>
+      <td>
+        <table id="hero" class="container" style="width:100%">
+        <tbody style="width:100%">
+          <tr style="width:100%">
+            <td> 
+              <a href="https://healthylivingtogo.com/" target="_blank"><img id="hero-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868045414_New%20Products%20Header%20(Spring)_01GTMBN58Q5TJ3VS8KVFWM05RZ.png" alt="New Products Banner with flowers around it"></a>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+    </tr>
+
+ <!--0th Two Column Component -->
+ <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/896165002665?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868045841_23-HL-NewProducts-03.06-13_01GTMBN5P0ZGBVAF18GPDVJ14W.png" alt="Two brown plastic cartons"></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">FOODIES</p>
+                                    <p class="np-product np-text">Plant-Based Chorizo and Italian Sausage Crumbles</p>
+                                    <p class="np-description np-text">Back by popular request! Foodies’ Ground Pumfu are delicious, vegan, mildly-seasoned crumbles that are easy to prepare on the stovetop or in the oven. Try the Italian Sausage with pizza or lasagna, or add the Mexican Chorizo to your tacos, nachos, and more. Both are made with traditional savory flavors and crafted with pumpkin seed protein for a tasty and convenient meat alternative.</p>
+                                    <a href="https://healthylivingtogo.com/product/896165002665?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/042421500011?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046543_23-HL-NewProducts-03.06-09_01GTMBN6C0NBFKCVVQ64JTCJDB.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">BOAR’S HEAD</p>
+                                    <p class="np-product np-text">American Cheese Slice Packs</p>
+                                    <p class="np-description np-text">Boar’s Head is a classic for a reason! Pick up these American Cheese Slice Packs for a rich, savory cheese that’s conveniently pre-sliced and amazingly meltable. Perfect for grilled cheese, burgers, and more … YUM!</p>
+                                    <a href="https://healthylivingtogo.com/product/042421500011?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+    <!--1st Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/897609002012?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868049227_23-HL-NewProducts-03.06-01_01GTMBN8ZSKN7SJ75HQ43ZYK48.png" alt="Two brown plastic cartons"></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">SUNRISE ORCHARDS</p>
+                                    <p class="np-product np-text">Apple Cider</p>
+                                    <p class="np-description np-text">Sunrise Orchards’ Apple Cider is crafted with a commitment to quality, the environment, and the local Vermont community. Their farm and facilities are 100% solar-powered, including the refrigerated storage facility that keeps apples fresh and ready to eat during the winter months. Pick some up this week for a taste of autumn!</p>
+                                    <a href="https://healthylivingtogo.com/product/897609002012?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/813636023356?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048908_23-HL-NewProducts-03.06-02_01GTMBN8NSNG7MMS74R1EPGSY0.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">CALIFIA FARMS</p>
+                                    <p class="np-product np-text">Organic Plant Milks</p>
+                                    <p class="np-description np-text">Califia Farms Organic Plant Milks are crafted from just three ingredients: water, sea salt, and either almonds or oats. The result is a deliciously simple beverage that’s perfect in coffee, cereal, cooking, baking, and more. Dairy-free goodness with zero compromise—give them a try!</p>
+                                    <a href="https://healthylivingtogo.com/product/813636023356?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+    <!--2nd Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048563_23-HL-NewProducts-03.06-03_01GTMBN8B2JEHKK9DGAH2RSTMQ.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">LESSER EVIL</p>
+                                    <p class="np-product np-text">Space Balls</p>
+                                    <p class="np-description np-text">Out-of-this-world flavor, with better-for-you ingredients? Lesser Evil’s Organic Space Balls are making it happen! Try Interstellar Cheddar for a dairy-free, savory snack, or Cinnamon Sugar Stardust for a sweet treat made with cleaner ingredients.</p>
+                                    <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/goodearth-cst-upc-850031990005?p" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048244_23-HL-NewProducts-03.06-04_01GTMBN814DC4Y0HG26PMDQ3S5.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">GOODLES</p>
+                                    <p class="np-product np-text">Boxed Mac & Cheese</p>
+                                    <p class="np-description np-text">21 plant nutrients, 14g of protein, and 7g of fiber *with* prebiotics—you can have your mac and eat it, too! Free from artificial flavors and preservatives, go ahead and serve up the gooiest Goodles flavors like Cheddy Mac, Twist My Parm, and Vegan is Believin’.</p>
+                                    <a href="https://healthylivingtogo.com/product/goodearth-cst-upc-850031990005?p" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+<!--3rd Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/erw-la-cstm-upc-196852562213?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047907_23-HL-NewProducts-03.06-05_01GTMBN7PHZ0HGNWYPWJG37TS5.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">SPACE TEA</p>
+                                    <p class="np-product np-text">Mushroom Lemonade Teas</p>
+                                    <p class="np-description np-text">New Certified Organic Space Tea flavors just landed! Brewed with non-psychoactive, functional, and adaptogenic Reishi & Lion's Mane mushrooms for uplifting energy, calm focus, mood boosting, and mental clarity. Sip on refreshing Golden Mango, Original Lemonade, Summer Watermelon, and more.</p>
+                                    <a href="https://healthylivingtogo.com/product/erw-la-cstm-upc-196852562213?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/860005141920?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047572_23-HL-NewProducts-03.06-06_01GTMBN7C2HEK3NZTKFHJR8502.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">LOVEBIRD</p>
+                                    <p class="np-product np-text">Grain Free Cereals</p>
+                                    <p class="np-description np-text">Rise and fly in the morning with Lovebird: nutrient-dense cereals free from grains, dairy, gluten, and refined sugars. Support your gut health with yummy flavors like honey, cinnamon, and cacao! Hint, hint: coconut oil helps control blood sugar for steady energy to get your day going.</p>
+                                    <a href="https://healthylivingtogo.com/product/860005141920?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+
+    <!--4th Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/product/00855615002075?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047228_23-HL-NewProducts-03.06-07_01GTMBN71BZVQT13RC2DJ2701P.png" alt="g"></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">BIANCO DINAPOLI</p>
+                                    <p class="np-product np-text">Canned Tomatoes</p>
+                                    <p class="np-description np-text">Taste fresh, field-ripened tomatoes organically grown in the California sun, right out of the can. Bianca Dinapoli’s Whole Peeled & Crushed Tomatoes are packed with a touch of sea salt, organic basil, and fresh tomato juice—then sealed to lock in the bursting flavors of the summer harvest!</p>
+                                    <a href="https://healthylivingtogo.com/product/00855615002075?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046197_23-HL-NewProducts-03.06-11_01GTMBN618FX343RTCPV0SRGR0.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">HL FRESH</p>
+                                    <p class="np-product np-text">Take and Bake Chocolate Chip Cookie Dough</p>
+                                    <p class="np-description np-text">It’s time to devour your favorite Healthy Living homemade chocolate chip cookies, hot out of your *own* oven. Get your hands on our NEW Take & Bake Cookies in the grocery freezer—perfectly portioned and ready for your next movie night!</p>
+                                    <a href="https://healthylivingtogo.com/" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+    <!--5th Two Column Component -->
+    <tr>
+    <td>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="two-columns">
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+                                <tr>
+                                    <td>
+                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046885_23-HL-NewProducts-03.06-08_01GTMBN6PHF7FC3YZF8P8AV784.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td class="black np-container">
+                                    <p class="np-brand np-text">HL FRESH</p>
+                                    <p class="np-product np-text">Irish Soda Bread</p>
+                                    <p class="np-description np-text">Family recipes connect generations, like this Irish Soda Bread passed down by Chef Mike’s Grandma! Grab your favorite butter spread and schmear the crunchy crust or the soft crumb. Either way, it’s a match made in heaven.</p>
+                                    <a href="https://healthylivingtogo.com/" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+    </tr>
+
+      <!-- Footer -->
+
+    <tr>
+      <td>
+        <table width="100%">
+          <tr>
+            <td class="two-columns">
+              <table class="column">
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tr>
+                        <td>
+                          <h4 style="margin-top:24px;">Healthy Living</h4>
+                          <p style="margin-top: 24px;">
+                            222 Dorset St, South Burlington, VT 05403
+                            <br>Hours: 7am-9pm every day
+                            <br>Contact Us: 802.863.2569 or visit our website
+                            <br><br>129 Market Street, Williston, VT 05495
+                            <br>Hours: 8am-9pm every day
+                            <br>Contact Us: 802-879-2020 or visit our website
+                            <br><br>© 2020 Healthy Living
+                        </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="column">
+                <tbody>
+                <tr>
+                  <td class="column-padding">
+                    <table class="column-content footer">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <a href="https://goo.gl/maps/emyzJbuj1yLzwGb97" target="_blank"><img style="max-width:240px;"  src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369213_map2-01_01GT03F2XGJ1RTJPF6NM7Y1RNK.png" alt="a top down road map of the vermont store">  </a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    </tbody>
+    </table>
+    </center>
+  </body>
+</html>
