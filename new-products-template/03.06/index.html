@@ -7,8 +7,9 @@
 
     <title>New Products 3/6</title>
     <style>
-      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/Microbrew-Soft-One.otf');
-      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/NeutraText%20BookAlt.otf');
+      /* @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/Microbrew-Soft-One.otf');
+      @import url('https://github.com/caleb-hg/HealthyLiving-Emails/blob/557662acb147664ecb9c7edab296c05ee3bf84bc/test-1/fonts/NeutraText%20BookAlt.otf'); */
+      @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@600&family=Montserrat:wght@200;300;400;600;700&display=swap');
 
       *{
         margin:0;
@@ -18,7 +19,8 @@
 
       body{
         font-size:16px;
-        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight:300;
       }
 
       .wrapper{
@@ -61,19 +63,16 @@
       #social-logo-container{
         width:300px;
         max-width:300px;
-      }
-
-      #social-logo-list{
         margin:24px;
         float:right;
         list-style-type:none;
       }
 
-      #social-logo-list > li{
+      .social-logo{
         display:inline;
       }
 
-      #social-logo-list > li > a > img{
+      .social-logo-img{
         max-width:36px;
         margin-right:4px;
       }      
@@ -107,7 +106,7 @@
       }
 
       h1{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:40px;
         letter-spacing: -2px;
         line-height: 48px;
@@ -175,12 +174,12 @@
         padding:24px;
       }
 
-      .footer > tbody > tr > td{
+      .footer-content{
         width:50%;
         padding:24px 24px;
       }
 
-      .footer > tbody > tr > td > p{
+      .footer-text{
         color:#000000;
         font-size: 12px;
         line-height: 18px;
@@ -188,21 +187,22 @@
         text-align: left;
       }
 
-      .footer > tbody > tr > td > h4{
+      .footer-h4{
         color:#000000;
         font-size: 24px;
         line-height: 18px;
         text-align: left;
       }
       
-      .footer > tbody > tr > td > a > img{
+      .footer-img{
         width: 200px;
+        max-width: 200px;
         float:right;
       }
 
 
       .bd-date{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:48px;
         letter-spacing: -3px;
         line-height: 48px;
@@ -233,7 +233,8 @@
       .bd-text, .np-text{
         text-align: left;
         font-size:24px;
-        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight:300;
       }
       
       .bd-image, .np-image{
@@ -242,7 +243,7 @@
       }
 
       .bd-discount{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:56px;
         letter-spacing: -3px;
         line-height: 48px;
@@ -254,7 +255,7 @@
       }
 
       .bd-discount-cents{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:32px;
         letter-spacing: -2px;
         padding-top:2px;
@@ -263,7 +264,7 @@
       }
 
       .bd-discount-upto{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:24px;
         letter-spacing: -2px;
         padding-top:2px;
@@ -274,7 +275,7 @@
       }
 
       .bd-discount-size{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         font-size:32px;
         padding-top:16px;
         letter-spacing: -2px;
@@ -300,12 +301,13 @@
       }
 
       .np-product{
-        font-family: "Microbrew Soft One", Helvetica, Arial, sans-serif;
-        font-size:32px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size:24px;
         padding-top: 4px;
-        line-height:32px;
-        font-weight:300;
-        letter-spacing: -1px;
+        line-height:24px;
+        font-weight:600;
+        letter-spacing: 0px;
+        text-transform: Capitalize;
       }
 
       .bd-size-price{
@@ -351,7 +353,7 @@
       .np-description{
         font-size:14px;
         line-height: 16px;
-        font-family: "Neutra Text", Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         margin-bottom: 12px;
       }
 
@@ -363,10 +365,6 @@
           font-size:18px;
         }
 
-        #social-logo-list{
-        width:100%;
-        margin: 0 auto;
-      }
 
       .column-text{
         font-size: 24px;
@@ -391,67 +389,55 @@
         <tbody>
 
 <!-- Header -->
-    <tr>
-      <td>
-        <table width="100%">
-        <tbody>
-          <tr>
-            <td class="two-columns">
-              <table class="column">
-                <tbody>
-                <tr>
-                  <td class="column-padding">
-                    <table class="column-content">
-                      <tr>
-                        <td>
-                          <a href="https://healthylivingmarket.com/" target="_blank"><img id="hl-logo" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368358_hl-logo-horizontal-2_01GT03F22NHYGYCQCKN8Z2MVPR.png" alt="hl logo"></a>
+<tr>
+    <td>
+      <table width="100%">
+      <tbody>
+        <tr>
+          <td class="two-columns">
+            <table class="column">
+              <tbody>
+              <tr>
+                <td class="column-padding">
+                  <table class="column-content">
+                    <tr>
+                      <td>
+                        <a href="https://healthylivingmarket.com/" target="_blank"><img id="hl-logo" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368358_hl-logo-horizontal-2_01GT03F22NHYGYCQCKN8Z2MVPR.png" alt="hl logo"></a>
+                    </td>
+                  </tr>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <table class="column">
+              <tbody class="social-logo-container2">
+              <tr>
+                <td class="column-padding">
+                  <table class="column-content">
+                    <tbody>
+                    <tr>
+                      <td id="social-logo-container">
+                            <a class="social-logo" href="https://www.facebook.com/HealthyLivingMarket" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368040_fb-logo_01GT03F1RXM9K7Z3GYYBKSJ6JE.png" alt="fb logo"></a>
+                            <a class="social-logo" href="https://www.instagram.com/healthy.living.market" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368857_ig-logo_01GT03F2J977Q4ZB0M4S2KNWQR.png" alt="ig logo"></a>
+                            <a class="social-logo" href="https://www.tiktok.com/@healthy.living.grocery" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369894_tt-logo_01GT03F3JRETZMN5JJKFKWYXDT.png" alt="tt logo"></a>
+                            <a class="social-logo" href="https://twitter.com/HealthyLivingVT" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370218_tw-logo_01GT03F3WTJ8MPP4EHJ6XDWCNM.png" alt="tw logo"></a>
+                            <a class="social-logo" href="https://www.pinterest.com/healthylivingmarketandcafe/" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369563_pt-logo_01GT03F38ESTRHEXPGM53MJQRF.png" alt="pt logo"></a>
+                            <a class="social-logo" href="https://www.youtube.com/user/HealthyLivingMovies" target="_blank"><img class="social-logo-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370537_yt-logo_01GT03F46R95BFW4QR3KE6N8TF.png" alt="yt logo"></a>
                       </td>
                     </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <table class="column">
-                <tbody>
-                <tr>
-                  <td class="column-padding">
-                    <table class="column-content">
-                      <tr>
-                        <td id="social-logo-container">
-                          <ul id="social-logo-list">
-                            <li>
-                              <a href="https://www.facebook.com/HealthyLivingMarket" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368040_fb-logo_01GT03F1RXM9K7Z3GYYBKSJ6JE.png" alt="fb logo"></a>
-                            </li>
-                            <li>
-                              <a href="https://www.instagram.com/healthy.living.market" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188368857_ig-logo_01GT03F2J977Q4ZB0M4S2KNWQR.png" alt="ig logo"></a>
-                            </li>
-                            <li>
-                              <a href="https://www.tiktok.com/@healthy.living.grocery" target="_blank"><img  src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369894_tt-logo_01GT03F3JRETZMN5JJKFKWYXDT.png" alt="tt logo"></a>
-                            </li>
-                            <li>
-                              <a href="https://twitter.com/HealthyLivingVT" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370218_tw-logo_01GT03F3WTJ8MPP4EHJ6XDWCNM.png" alt="tw logo"></a>
-                            </li>
-                            <li>
-                              <a href="https://www.pinterest.com/healthylivingmarketandcafe/" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369563_pt-logo_01GT03F38ESTRHEXPGM53MJQRF.png" alt="pt logo"></a>
-                            </li>
-                            <li>
-                              <a href="https://www.youtube.com/user/HealthyLivingMovies" target="_blank"><img src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188370537_yt-logo_01GT03F46R95BFW4QR3KE6N8TF.png" alt="yt logo"></a>
-                            </li>
-                          </ul>
-                        </td>
-                      </tr>
-                    </tbody>  
-                    </table>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-        </table>
-      </td>
-    </tr>
+                  </tbody>  
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </td>
+  </tr>
 
     <!-- Hero -->
     <tr>
@@ -460,7 +446,8 @@
         <tbody style="width:100%">
           <tr style="width:100%">
             <td> 
-              <a href="https://healthylivingtogo.com/" target="_blank"><img id="hero-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868045414_New%20Products%20Header%20(Spring)_01GTMBN58Q5TJ3VS8KVFWM05RZ.png" alt="New Products Banner with flowers around it"></a>
+                <!-- Insert Image in "src": -->
+              <a href="https://healthylivingtogo.com/" target="_blank"><img id="hero-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223612617_New%20Products%20Header%20(Spring)_01GTYYR6YBZXY5JH0REZB1651W.png" alt="New Products Banner with flowers around it"></a>
             </td>
           </tr>
         </tbody>
@@ -481,7 +468,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/896165002665?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868045841_23-HL-NewProducts-03.06-13_01GTMBN5P0ZGBVAF18GPDVJ14W.png" alt="Two brown plastic cartons"></a>
+                                        <a href="https://healthylivingtogo.com/product/896165002665?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223612284_23-HL-NewProducts-03.06-13_01GTYYR6KZWSC9ZNBAEVRPBFFN.png" alt="Two brown plastic cartons"></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -502,7 +489,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/042421500011?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046543_23-HL-NewProducts-03.06-09_01GTMBN6C0NBFKCVVQ64JTCJDB.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/product/042421500011?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223611603_23-HL-NewProducts-03.06-09_01GTYYR5YQTPNJHP0YJA3AJ68E.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -537,7 +524,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/897609002012?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868049227_23-HL-NewProducts-03.06-01_01GTMBN8ZSKN7SJ75HQ43ZYK48.png" alt="Two brown plastic cartons"></a>
+                                        <a href="https://healthylivingtogo.com/product/897609002012?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223608881_23-HL-NewProducts-03.06-01_01GTYYR39P3E703SY924MRHE99.png" alt="Two brown plastic cartons"></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -558,7 +545,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/813636023356?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048908_23-HL-NewProducts-03.06-02_01GTMBN8NSNG7MMS74R1EPGSY0.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/product/813636023356?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223609207_23-HL-NewProducts-03.06-02_01GTYYR3KZ3ZKTKZ2JXV0P32S9.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -588,25 +575,29 @@
                 <tr>
                     <td class="two-columns">
                     <table class="column">
+                        <tbody>
                         <tr>
                         <td class="column-padding">
-                            <table class="column-content">
-                                <tr>
-                                    <td>
-                                        <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048563_23-HL-NewProducts-03.06-03_01GTMBN8B2JEHKK9DGAH2RSTMQ.png" alt=""></a>
-                                    </td>
-                                </tr>
-                            <tr>
-                                <td class="black np-container">
-                                    <p class="np-brand np-text">LESSER EVIL</p>
-                                    <p class="np-product np-text">Space Balls</p>
-                                    <p class="np-description np-text">Out-of-this-world flavor, with better-for-you ingredients? Lesser Evil’s Organic Space Balls are making it happen! Try Interstellar Cheddar for a dairy-free, savory snack, or Cinnamon Sugar Stardust for a sweet treat made with cleaner ingredients.</p>
-                                    <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
-                                </td>
-                            </tr>
-                            </table>
+                                <table class="column-content">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223609537_23-HL-NewProducts-03.06-03_01GTYYR3YAZZ95R0W7YPN1ZPGC.png" alt=""></a>
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                            <td class="black np-container">
+                                                <p class="np-brand np-text">LESSER EVIL</p>
+                                                <p class="np-product np-text">Space Balls</p>
+                                                <p class="np-description np-text">Out-of-this-world flavor, with better-for-you ingredients? Lesser Evil’s Organic Space Balls are making it happen! Try Interstellar Cheddar for a dairy-free, savory snack, or Cinnamon Sugar Stardust for a sweet treat made with cleaner ingredients.</p>
+                                                <a href="https://healthylivingtogo.com/product/850038090739?pListName=Online" target="_blank" class="bd-button bd-text">ADD TO CART</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                </table>
                         </td>
                         </tr>
+                    </tbody>
                     </table>
                     <table class="column">
                         <tr>
@@ -614,7 +605,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/goodearth-cst-upc-850031990005?p" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868048244_23-HL-NewProducts-03.06-04_01GTMBN814DC4Y0HG26PMDQ3S5.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/product/goodearth-cst-upc-850031990005?p" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223609884_23-HL-NewProducts-03.06-04_01GTYYR495M0MH68R8XT7A36KP.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -649,7 +640,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/erw-la-cstm-upc-196852562213?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047907_23-HL-NewProducts-03.06-05_01GTMBN7PHZ0HGNWYPWJG37TS5.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/product/erw-la-cstm-upc-196852562213?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223610224_23-HL-NewProducts-03.06-05_01GTYYR4KNEF66FEQBCJC52HG4.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -670,7 +661,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/860005141920?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047572_23-HL-NewProducts-03.06-06_01GTMBN7C2HEK3NZTKFHJR8502.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/product/860005141920?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223610561_23-HL-NewProducts-03.06-06_01GTYYR4Y8650DB9GG0ZWNQP7B.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -706,7 +697,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/product/00855615002075?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868047228_23-HL-NewProducts-03.06-07_01GTMBN71BZVQT13RC2DJ2701P.png" alt="g"></a>
+                                        <a href="https://healthylivingtogo.com/product/00855615002075?pListName=Online" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223610921_23-HL-NewProducts-03.06-07_01GTYYR59EKW1F47MNFA46RQSH.png" alt="g"></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -727,7 +718,7 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046197_23-HL-NewProducts-03.06-11_01GTMBN618FX343RTCPV0SRGR0.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223611943_23-HL-NewProducts-03.06-11_01GTYYR69GA6YY8K8DD5SGF10J.png" alt=""></a>
                                     </td>
                                 </tr>
                             <tr>
@@ -762,9 +753,18 @@
                             <table class="column-content">
                                 <tr>
                                     <td>
-                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677868046885_23-HL-NewProducts-03.06-08_01GTMBN6PHF7FC3YZF8P8AV784.png" alt=""></a>
+                                        <a href="https://healthylivingtogo.com/" target="_blank"><img class="np-image" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678223611271_23-HL-NewProducts-03.06-08_01GTYYR5MC2BZHRMR31GZKNWTY.png" alt=""></a>
                                     </td>
                                 </tr>
+                            </table>
+                        </td>
+                        </tr>
+                    </table>
+                    <table class="column">
+                        <tr>
+                        <td class="column-padding">
+                            <table class="column-content">
+
                             <tr>
                                 <td class="black np-container">
                                     <p class="np-brand np-text">HL FRESH</p>
@@ -784,56 +784,61 @@
     </td>
     </tr>
 
-      <!-- Footer -->
 
-    <tr>
-      <td>
-        <table width="100%">
-          <tr>
-            <td class="two-columns">
-              <table class="column">
-                <tr>
-                  <td class="column-padding">
-                    <table class="column-content footer">
-                      <tr>
-                        <td>
-                          <h4 style="margin-top:24px;">Healthy Living</h4>
-                          <p style="margin-top: 24px;">
-                            222 Dorset St, South Burlington, VT 05403
-                            <br>Hours: 7am-9pm every day
-                            <br>Contact Us: 802.863.2569 or visit our website
-                            <br><br>129 Market Street, Williston, VT 05495
-                            <br>Hours: 8am-9pm every day
-                            <br>Contact Us: 802-879-2020 or visit our website
-                            <br><br>© 2020 Healthy Living
-                        </td>
-                    </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <table class="column">
+<!-- Footer -->
+<tr>
+    <td>
+      <table width="100%">
+        <tbody>
+        <tr>
+          <td class="two-columns">
+            <table class="column">
                 <tbody>
-                <tr>
-                  <td class="column-padding">
-                    <table class="column-content footer">
-                      <tbody>
-                      <tr>
-                        <td>
-                          <a href="https://goo.gl/maps/emyzJbuj1yLzwGb97" target="_blank"><img style="max-width:240px;"  src="https://userimg-assets.customeriomail.com/images/client-env-133501/1677188369213_map2-01_01GT03F2XGJ1RTJPF6NM7Y1RNK.png" alt="a top down road map of the vermont store">  </a>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+              <tr>
+                <td class="column-padding">
+                  <table class="column-content footer">
+                    <tbody>
+                    <tr>
+                      <td class="footer-content">
+                        <h4 class="footer-h4">Healthy Living</h4>
+                        <p class="footer-text">
+                          3065 Route 50, Wilton Mall, Saratoga Springs, NY 12866
+                          <br>Hours: 9am-9pm every day
+                          <br>Contact Us: 518-306-4900 or <a href="https://healthylivingmarket.com/" target="_blank">visit our website</a>
+                          <br><br>© 2023 Healthy Living
+                          <a href="{% manage_subscription_preferences_url %}" target="_blank">Edit Subscription</a>
+                          </p>
+                      </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <table class="column">
+              <tbody>
+              <tr >
+                <td class="column-padding">
+                  <table class="column-content footer">
+                    <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://goo.gl/maps/emyzJbuj1yLzwGb97" target="_blank"><img style="max-width:240px;" class="footer-img" src="https://userimg-assets.customeriomail.com/images/client-env-133501/1678139381359_map3-01_01GTWEDNRZ4Q54V7ZJQ3SH3RWP.png" alt="a top down road map of the vermont store">  </a>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
 
     </tbody>
     </table>
